@@ -1,4 +1,4 @@
-from flask import Flask, request
+from flask import Flask, jsonify, request
 import os
 from pydub import AudioSegment
 from pydub.utils import make_chunks
@@ -102,5 +102,5 @@ def handle_request():
     # print(output)
     return output
 
-#
-# app.run(host="0.0.0.0", port=5000)
+
+app.run()
