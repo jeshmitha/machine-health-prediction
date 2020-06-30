@@ -1,5 +1,4 @@
-from flask import Flask, jsonify, request
-import random
+from flask import Flask, request
 import os
 from pydub import AudioSegment
 from pydub.utils import make_chunks
@@ -7,7 +6,6 @@ import librosa
 import pickle
 import pandas as pd
 import numpy as np
-import keras
 
 app = Flask(__name__)
 
